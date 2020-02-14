@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PackageId>RoundRobinTournamentScheduling</PackageId>
+    <Version>1.0.1</Version>
+    <Authors>Vlad Nan</Authors>
+    <Title>Round-Robin tournament scheduling algorithm</Title>
+    <Description>
+      A round-robin tournament (or all-play-all tournament) is a competition in which each contestant meets all other contestants in turn.
+      This library contains an algorithm for building competitors pairs for every round in a tournament.
+      Can be used for scheduling tournaments in chess, checkers, draughts et al. 
+    </Description>
+  </PropertyGroup>
+</Project>
