@@ -5,10 +5,35 @@
 
     public class RoundRobinAlgorithm
     {
+        public int[][][] GetCalculatedSchedule(int tours, int participants)
+        {
+            return Enumerable.Range(0, tours)
+                    .Select(tour => GetCalculatedSchedule(participants))
+                    .Select(SwapResults)
+                    .SelectMany(r => r)
+                    .ToArray();
+            
+            int[][][] SwapResults(int[][][] schedule, int tourNumber)
+            {
+                if(tourNumber % 2 == 1)
+                {
+                    for(int i = 0; i < schedule.Length; i++)
+                    for(int j = 0; j < schedule[i].Length; j++)
+                    {
+                        int number = schedule[i][j][0];
+                        schedule[i][j][0] = schedule[i][j][1];
+                        schedule[i][j][1] = number;
+                    }
+                }
+
+                return schedule;
+            }
+        }
+        
         public int[][][] GetCalculatedSchedule(int participants)
         {
             int oddShift = participants % 2;
-            int rounds =  participants - 1 + oddShift;
+            int rounds = participants - 1 + oddShift;
             int halfSize = participants / 2;
             int[] numbers = Enumerable.Range(1, participants).ToArray();
             int[][][] schedule = new int[rounds][][];
