@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <PackageId>RoundRobinTournamentScheduling</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.1.1</Version>
     <Authors>Vlad Nan</Authors>
     <Title>Round-Robin tournament scheduling algorithm</Title>
     <Description>

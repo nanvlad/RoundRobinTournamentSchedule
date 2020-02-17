@@ -1,4 +1,4 @@
-﻿namespace Tournament.Scheduling
+﻿namespace TournamentScheduling
 {
     using System.Linq;
     using System.Threading.Tasks;

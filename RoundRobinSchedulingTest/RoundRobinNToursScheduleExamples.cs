@@ -1,4 +1,4 @@
-﻿namespace Tournament.Scheduling.Test
+﻿namespace TournamentScheduling.Test
 {
     using System.Collections;
     using System.Collections.Generic;
