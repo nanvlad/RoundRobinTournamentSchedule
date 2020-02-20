@@ -2,9 +2,10 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <PackageId>RoundRobinTournamentScheduling</PackageId>
-    <Version>1.1.1</Version>
+    <Version>1.1.2</Version>
     <Authors>Vlad Nan</Authors>
     <Title>Round-Robin tournament scheduling algorithm</Title>
+    <PackageProjectUrl>https://github.com/nanvlad/RoundRobinTournamentSchedule</PackageProjectUrl>
     <Description>
       A round-robin tournament (or all-play-all tournament) is a competition in which each contestant meets all other contestants in turn.
       This library contains an algorithm for building competitors pairs for every round in a tournament.

@@ -5,7 +5,7 @@
 
     public class RoundRobinAlgorithm
     {
-        public int[][][] GetCalculatedSchedule(int tours, int participants)
+        public int[][][] GetCalculatedSchedule(int participants, int tours = 1)
         {
             return Enumerable.Range(0, tours)
                     .Select(tour => GetCalculatedSchedule(participants))
@@ -30,7 +30,7 @@
             }
         }
         
-        public int[][][] GetCalculatedSchedule(int participants)
+        private static int[][][] GetCalculatedSchedule(int participants)
         {
             int oddShift = participants % 2;
             int rounds = participants - 1 + oddShift;

@@ -31,7 +31,7 @@
         [ClassData(typeof(RoundRobinNToursScheduleExamples))]
         public void ShouldGetNToursRoundRobinSchedule(int tours, int participants, int[][][] expectedSchedule)
         {
-            var schedule = _algorithm.GetCalculatedSchedule(tours, participants);
+            var schedule = _algorithm.GetCalculatedSchedule(participants, tours);
             schedule.Length.Should().Be(expectedSchedule.Length);
             schedule[0].Length.Should().Be(expectedSchedule[0].Length);
             schedule[0][0].Length.Should().Be(expectedSchedule[0][0].Length);
